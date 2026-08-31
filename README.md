@@ -38,7 +38,6 @@ omarchy theme set dionysus
 | `neovim.lua` | Neovim colorscheme plugin spec. |
 | `icons.theme` | GTK icon theme name. |
 | `vscode.json` | VS Code / VSCodium / Cursor extension + theme name. |
-| `fetch-backgrounds.sh` | Downloads the two backgrounds this repo does not host. |
 
 ## The palette
 
@@ -142,7 +141,7 @@ The background ladder is strictly monotonic:
 
 ## Backgrounds
 
-Five, cycled with `omarchy theme bg next`. All were chosen or checked against the
+Three, cycled with `omarchy theme bg next`. All were chosen or checked against the
 palette's own signature — mean `R87 G115 B146`, standard deviation 32: blue
 dominant, mid-dark, low contrast from atmospheric haze.
 
@@ -150,17 +149,14 @@ dominant, mid-dark, low contrast from atmospheric haze.
 | --- | --- | --- |
 | `1-dionysus.png` | 2008×1112 | The rice's own wallpaper, salvaged (below). |
 | `2-street-power-lines.png` | 2560×1280 | Dusk street under power lines. The closest match in mood. |
-| `3-mist-spheres.jpg` † | 2880×1440 | Spherical structures in cold hillside fog. |
-| `4-tower-blocks.jpg` † | 2880×1440 | Tower blocks over a low landscape at blue hour. |
 | `5-watchtower.png` | 2560×1600 | A watchtower above forest under a cold sky. |
 
 Numbers 2–5 come from [dharmx/walls](https://github.com/dharmx/walls).
 
-† **Not included in this repository.** 3 and 4 are Simon Stålenhag paintings, so
-this repo does not host them. Run `./fetch-backgrounds.sh` once after cloning to
-download them from the collection they came from, then re-apply the theme. The
-theme works fine without them — you simply cycle three backgrounds instead of
-five.
+The theme originally cycled five. Two were Simon Stålenhag paintings and are not
+redistributed here; if you want them, they are in
+[dharmx/walls](https://github.com/dharmx/walls) under `stalenhag/`, and dropping
+any image into `backgrounds/` picks it up on the next `omarchy theme set`.
 
 ### The dionysus wallpaper
 
@@ -187,17 +183,15 @@ is ordinary and fine. Publishing a fork with this file is not: delete
 `backgrounds/1-dionysus.png` and substitute your own, or ship an empty
 `backgrounds/` and let users add their own with `omarchy theme bg install`.
 
-### The other four
+### The other two
 
 `2-street-power-lines.png` and `5-watchtower.png` are third-party images whose
 authors the source collection does not record. They are bundled here; if you are
 one of those authors, see the removal note in Credits.
 
-`3-mist-spheres.jpg` and `4-tower-blocks.jpg` are deliberately absent, because
-they are the work of a named, living artist who sells them. Fetching an image
-for your own desktop is ordinary personal use; rehosting it is not. That is the
-line this repository draws, and `fetch-backgrounds.sh` exists so drawing it
-costs you nothing.
+Two Stålenhag paintings are deliberately absent. Putting one on your own desktop
+is ordinary personal use; rehosting it is not. That is the only line this
+repository draws.
 
 The palette itself is a set of colour values read out of the rice's config
 files and is not covered by that concern.
@@ -212,10 +206,9 @@ by pewdiepie-archdaemon. Structured for [Omarchy](https://omarchy.org).
 None of the backgrounds are the work of this theme's author, and none are
 offered under any license by it.
 
-- `3-mist-spheres.jpg` and `4-tower-blocks.jpg` are paintings by
-  **[Simon Stålenhag](https://simonstalenhag.se/)**, and are *not* in this
-  repository for that reason — `fetch-backgrounds.sh` pulls them from the
-  collection they were taken from. All rights remain his. Please buy his books.
+- Two backgrounds that suit this palette especially well are paintings by
+  **[Simon Stålenhag](https://simonstalenhag.se/)**. They are not included here,
+  because they are his. Please buy his books.
 - `2-street-power-lines.png` and `5-watchtower.png` are from
   [dharmx/walls](https://github.com/dharmx/walls), which does not record their
   authors. Rights remain with whoever made them.
