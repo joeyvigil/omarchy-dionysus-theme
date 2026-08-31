@@ -1,0 +1,8 @@
+# OS / editor cruft
+.DS_Store
+*.swp
+*~
+
+# Not ours to redistribute — see fetch-backgrounds.sh
+backgrounds/3-mist-spheres.jpg
+backgrounds/4-tower-blocks.jpg
