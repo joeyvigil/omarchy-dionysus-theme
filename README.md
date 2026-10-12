@@ -6,7 +6,7 @@ neon pale cyan (`#9cdef2`), and this theme carries that palette into every
 surface Omarchy themes: terminal, bar, menus, lock screen, btop, Helix, Neovim,
 and VS Code.
 
-![Dionysus](preview.webp)
+![Dionysus](preview.png)
 
 ## Install
 
